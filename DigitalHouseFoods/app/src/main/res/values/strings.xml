@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">DigitalHouseFoods</string>
+   <string name="app_name">Digital House Foods</string>
+    <string name="tools_email">tairo@digitalhouse.com</string>
+    <string name="senha">******************</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="log_in">LOG IN</string>
+    <string name="or">OR</string>
+    <string name="register">REGISTER</string>
+    <string name="nome_tairo">Tairo Roberto Miguel</string>
 </resources>
