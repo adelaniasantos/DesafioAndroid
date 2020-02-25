@@ -11,4 +11,12 @@
     <string name="save_profile">SAVE PROFILE</string>
     <string name="profile">Profile</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descricao_prato">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.</string>
+    <string name="titulo_prato">Salada com molho Gengibre</string>
+    <string name="nome_restaurante">Tony Roma\'s</string>
+    <string name="endereco">Av. Lavandisca, 717 - Indianópolis, São Paulo</string>
+    <string name="horario">Fecha às 22:00</string>
+
 </resources>
