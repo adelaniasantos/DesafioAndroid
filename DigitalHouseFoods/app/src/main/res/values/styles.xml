@@ -15,6 +15,7 @@
 
     <style name="texto" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:fontFamily">Roboto</item>
+         <item name="android:textSize">18sp</item>
         <item name="android:textSize">18sp</item>
     </style>
 
