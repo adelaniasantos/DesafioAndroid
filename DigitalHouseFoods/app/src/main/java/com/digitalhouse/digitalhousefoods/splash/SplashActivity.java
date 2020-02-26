@@ -2,7 +2,7 @@ package com.digitalhouse.digitalhousefoods.splash;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import com.digitalhouse.digitalhousefoods.MainActivity;
+import com.digitalhouse.digitalhousefoods.views.MainActivity;
 import com.digitalhouse.digitalhousefoods.R;
 import java.util.Timer;
 import java.util.TimerTask;
