@@ -1,9 +1,7 @@
 package com.digitalhouse.digitalhousefoods.views;
-
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
 import com.digitalhouse.digitalhousefoods.R;
 
 public class MainActivity extends AppCompatActivity {
