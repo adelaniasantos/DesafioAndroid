@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Digital House Foods</string>
+   <string name="app_name">Digital House Foods</string>
     <string name="tools_email">tairo@digitalhouse.com</string>
     <string name="senha">******************</string>
     <string name="password">Password</string>
