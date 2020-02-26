@@ -7,7 +7,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:orientation="vertical"
-    tools:context=".views.PratosFragment">
+    tools:context=".views.fragment.PratosFragment">
 
     <FrameLayout
         android:layout_width="wrap_content"

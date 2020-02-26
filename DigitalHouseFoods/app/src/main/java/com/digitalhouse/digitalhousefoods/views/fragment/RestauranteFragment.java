@@ -1,4 +1,4 @@
-package com.digitalhouse.digitalhousefoods.views;
+package com.digitalhouse.digitalhousefoods.views.fragment;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -23,7 +23,6 @@ public class RestauranteFragment extends Fragment implements RestauranteListener
     public static final String CHAVE_RESTAURANTE = "restaurante";
 
     public RestauranteFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -55,7 +54,7 @@ public class RestauranteFragment extends Fragment implements RestauranteListener
     private void replaceFragment(Fragment fragment){
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
-                .addToBackStack(null)//volta para o fragmento
+                .addToBackStack(null)
                 .replace(R.id.container, fragment)
                 .commit();
     }
@@ -70,6 +69,4 @@ public class RestauranteFragment extends Fragment implements RestauranteListener
 
         return restaurantes;
     }
-
-
 }

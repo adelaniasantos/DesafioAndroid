@@ -1,4 +1,4 @@
-package com.digitalhouse.digitalhousefoods.views;
+package com.digitalhouse.digitalhousefoods.views.fragment;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.digitalhouse.digitalhousefoods.R;
 import com.digitalhouse.digitalhousefoods.model.Cardapio;
-import static com.digitalhouse.digitalhousefoods.views.RestauranteFragment.CHAVE_RESTAURANTE;
+import static com.digitalhouse.digitalhousefoods.views.fragment.RestauranteFragment.CHAVE_RESTAURANTE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,7 +27,6 @@ public class PratosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pratos, container, false);
 
         if (getArguments() != null){

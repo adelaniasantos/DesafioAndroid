@@ -1,8 +1,10 @@
-package com.digitalhouse.digitalhousefoods.splash;
+package com.digitalhouse.digitalhousefoods.views.activity.splash;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import com.digitalhouse.digitalhousefoods.views.MainActivity;
+
+import com.digitalhouse.digitalhousefoods.views.activity.LoginActivity;
+import com.digitalhouse.digitalhousefoods.views.activity.MainActivity;
 import com.digitalhouse.digitalhousefoods.R;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -25,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void jump() {
         timer.cancel();
-        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
         finish();
     }
 }

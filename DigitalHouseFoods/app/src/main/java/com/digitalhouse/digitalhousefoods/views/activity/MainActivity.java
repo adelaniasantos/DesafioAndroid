@@ -1,20 +1,15 @@
-package com.digitalhouse.digitalhousefoods.views;
+package com.digitalhouse.digitalhousefoods.views.activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import com.digitalhouse.digitalhousefoods.R;
+import com.digitalhouse.digitalhousefoods.views.fragment.RestauranteFragment;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
         if (id == R.id.menu_profile) {
-        Toast.makeText(this, "Profile", Toast.LENGTH_LONG).show();
-            return true;
+            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+            finishAffinity();
         }
         return super.onOptionsItemSelected(item);
     }

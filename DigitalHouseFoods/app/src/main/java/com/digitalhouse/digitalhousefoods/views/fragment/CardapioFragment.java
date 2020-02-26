@@ -1,4 +1,4 @@
-package com.digitalhouse.digitalhousefoods.views;
+package com.digitalhouse.digitalhousefoods.views.fragment;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -14,7 +14,7 @@ import com.digitalhouse.digitalhousefoods.adapter.CardapioRecyclerViewAdapter;
 import com.digitalhouse.digitalhousefoods.interfaces.CardapioListener;
 import com.digitalhouse.digitalhousefoods.model.Cardapio;
 import com.digitalhouse.digitalhousefoods.model.Restaurante;
-import static com.digitalhouse.digitalhousefoods.views.RestauranteFragment.CHAVE_RESTAURANTE;
+import static com.digitalhouse.digitalhousefoods.views.fragment.RestauranteFragment.CHAVE_RESTAURANTE;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,7 +72,7 @@ public class CardapioFragment extends Fragment implements CardapioListener {
     private void replaceFragment(Fragment fragment){
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
-                .addToBackStack(null)//volta para o fragmento
+                .addToBackStack(null)
                 .replace(R.id.container, fragment)
                 .commit();
     }

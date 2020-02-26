@@ -1,4 +1,4 @@
-package com.digitalhouse.digitalhousefoods.views;
+package com.digitalhouse.digitalhousefoods.views.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.digitalhouse.digitalhousefoods.R;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -43,5 +42,11 @@ public class ProfileActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onBackPressed(){
+        startActivity(new Intent(this, MainActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity();
+        return;
+    }
 
 }
