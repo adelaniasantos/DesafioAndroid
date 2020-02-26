@@ -9,4 +9,5 @@
     <color name="azul_opaco">#FF47525E</color>
     <color name="branco">#FFFFFFFF</color>
     <color name="azul_claro">#8492A6</color>
+    <color name="azul_escuro">#FF1F2D3D</color>
 </resources>
