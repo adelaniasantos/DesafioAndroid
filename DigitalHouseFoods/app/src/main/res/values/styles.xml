@@ -16,6 +16,8 @@
     <style name="texto" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:fontFamily">Roboto</item>
         <item name="android:textSize">14sp</item>
+         <item name="android:textSize">18sp</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="Botao" parent="Theme.AppCompat.Light.NoActionBar">
@@ -25,7 +27,6 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
     </style>
-
     <style name="TituloRestaurante" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:fontFamily">Roboto</item>
         <item name="android:textColor">@color/azul_escuro</item>
@@ -33,5 +34,4 @@
         <item name="android:textStyle">bold</item>
         <item name="android:lineSpacingMultiplier">1.29</item>
     </style>
-
 </resources>
