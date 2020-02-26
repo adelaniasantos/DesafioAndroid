@@ -18,5 +18,7 @@
     <string name="nome_restaurante">Tony Roma\'s</string>
     <string name="endereco">Av. Lavandisca, 717 - Indianópolis, São Paulo</string>
     <string name="horario">Fecha às 22:00</string>
+    <string name="pratos_principais">Pratos Principais</string>
+    <string name="texto_salada">Salada com molho Gengibre</string>
 
 </resources>

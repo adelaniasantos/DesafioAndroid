@@ -1,5 +1,4 @@
 package com.digitalhouse.digitalhousefoods.adapter;
-
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,6 @@ public class RestauranteRecyclerViewAdapter extends RecyclerView.Adapter<Restaur
         this.listener = listener;
     }
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -33,7 +31,6 @@ public class RestauranteRecyclerViewAdapter extends RecyclerView.Adapter<Restaur
         return new ViewHolder(view);
     }
 
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Restaurante restaurante = restaurantes.get(position);
@@ -42,7 +39,7 @@ public class RestauranteRecyclerViewAdapter extends RecyclerView.Adapter<Restaur
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // listener.enviaRestaurante(restaurante);
+                listener.enviaRestaurante(restaurante);
             }
         });
     }
@@ -51,7 +48,6 @@ public class RestauranteRecyclerViewAdapter extends RecyclerView.Adapter<Restaur
     public int getItemCount() {
         return restaurantes.size();
     }
-
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView nomeRestaurante;
@@ -78,8 +74,6 @@ public class RestauranteRecyclerViewAdapter extends RecyclerView.Adapter<Restaur
                 Drawable drawable = itemView.getResources().getDrawable(restaurante.getImagemRestaurente());
                 imagemRestaurante.setImageDrawable(drawable);
             }
-
-
         }
     }
 }

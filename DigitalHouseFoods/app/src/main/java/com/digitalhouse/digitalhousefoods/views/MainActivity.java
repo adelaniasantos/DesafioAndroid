@@ -1,14 +1,11 @@
 package com.digitalhouse.digitalhousefoods.views;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-
 import com.digitalhouse.digitalhousefoods.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        replaceFragment(new HomeFragment());
+        replaceFragment(new RestauranteFragment());
+
     }
 
     @Override
@@ -38,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //Método que recebe um Fragmento e recarrega na tela
     private void replaceFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, fragment).commit();

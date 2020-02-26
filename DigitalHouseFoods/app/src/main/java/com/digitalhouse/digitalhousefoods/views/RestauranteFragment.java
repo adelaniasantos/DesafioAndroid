@@ -1,5 +1,6 @@
 package com.digitalhouse.digitalhousefoods.views;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,27 +17,26 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment implements RestauranteListener {
+public class RestauranteFragment extends Fragment implements RestauranteListener {
     private RecyclerView recyclerView;
     private RestauranteRecyclerViewAdapter adapter;
-    public static final String RESTAURANTE_CHAVE = "restaurante";
+    public static final String CHAVE_RESTAURANTE = "restaurante";
 
-    public HomeFragment() {
+    public RestauranteFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_restaurante, container, false);
 
-        recyclerView = view.findViewById(R.id.rv_list);
-
+        recyclerView = view.findViewById(R.id.rv_list_restaurante);
         adapter = new RestauranteRecyclerViewAdapter(getListaRestaurantes(), this );
-
         recyclerView.setAdapter(adapter);
-
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         return view;
     }
@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment implements RestauranteListener {
     public void enviaRestaurante(Restaurante restaurante) {
         Fragment fragment = new CardapioFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelable(RESTAURANTE_CHAVE, restaurante);
+        bundle.putParcelable(CHAVE_RESTAURANTE, restaurante);
         fragment.setArguments(bundle);
 
         replaceFragment(fragment);
@@ -54,7 +54,9 @@ public class HomeFragment extends Fragment implements RestauranteListener {
 
     private void replaceFragment(Fragment fragment){
         getActivity().getSupportFragmentManager()
-                .beginTransaction().replace(R.id.container, fragment)
+                .beginTransaction()
+                .addToBackStack(null)//volta para o fragmento
+                .replace(R.id.container, fragment)
                 .commit();
     }
 
