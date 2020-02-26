@@ -6,5 +6,4 @@
         <solid android:color="@color/vermelho"/>
         <size android:height="70dp" android:width="494.5dp"/>
     </shape>
-    </item>
 </selector>
