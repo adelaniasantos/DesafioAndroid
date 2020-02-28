@@ -64,7 +64,7 @@ public class RegistroActivity extends AppCompatActivity {
         String senhaConfirmacao = registerConfirmPassword.getEditText().getText().toString();
 
         if(validaCampos(nome, email, senha, senhaConfirmacao)){
-            notificacao("Cadastro Realizado com Sucesso!");
+            notificacao(getString(R.string.cadastro_realizado));
             startActivity(new Intent(RegistroActivity.this, MainActivity.class));
             finishAffinity();
         }
@@ -73,18 +73,18 @@ public class RegistroActivity extends AppCompatActivity {
     private boolean validaCampos(String nomeCompleto, String email, String senha, String senhaConfirmacao) {
         if (Helper.isEmptyString(nomeCompleto) || Helper.isEmptyString(email)
                 || Helper.isEmptyString(senha) || Helper.isEmptyString(senhaConfirmacao))
-            notificacao("Por favor, preencha todos os campos");
+            notificacao(getString(R.string.preencha_todos_os_campos));
         else if (!Helper.nomeValido(nomeCompleto))
-            notificacao("Por favor, preencha o nome completo para cadastrar-se");
+            notificacao(getString(R.string.critica_nome));
         else if (!Helper.usuarioValido(email))
-            notificacao("Por favor, insira um e-mail válido");
+            notificacao(getString(R.string.critica_email));
         else if (Helper.senhaValida(senha)) {
             if (!Helper.senhaIguais(senha, senhaConfirmacao))
-                notificacao("Os dados inseridos nos campos Senha e Confirme sua senha, devem ser iguais. Tente novamente.");
+                notificacao(getString(R.string.critica_conf_senha));
             else
                 return true;
         } else
-            notificacao("A senha deve conter pelo menos 6 caracteres, uma letra maiuscula e minuscula, um número e um caracter especial.");
+            notificacao(getString(R.string.valida_senha));
 
         return false;
     }

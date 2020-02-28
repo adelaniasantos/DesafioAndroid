@@ -54,9 +54,9 @@ public class LoginActivity extends AppCompatActivity {
         String senha = loginSenha.getEditText().getText().toString();
 
         if (Helper.isEmptyString(usuario) || Helper.isEmptyString(senha))
-            notificacao( "Por favor, preencha todos os campos");
+            notificacao(getString(R.string.dados_invalidos));
         else if (!Helper.usuarioValido(usuario) || !Helper.senhaValida(senha))
-            notificacao( "Usuário ou senha não atendem as regras, por favor, tente novamente");
+            notificacao(getString(R.string.user_senha_invalidos));
         else
             return true;
 

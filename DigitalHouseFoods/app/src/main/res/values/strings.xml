@@ -18,4 +18,13 @@
     <string name="horario">Fecha às 22:00</string>
     <string name="pratos_principais">Pratos Principais</string>
     <string name="texto_salada">Salada com molho Gengibre</string>
+    <string name="dados_invalidos">Por favor, preencha todos os campos</string>
+    <string name="user_senha_invalidos">Usuário ou senha não atendem as regras, por favor, tente novamente</string>
+    <string name="dados_sucesso">Dados Salvos com sucesso!</string>
+    <string name="cadastro_realizado">Cadastro Realizado com Sucesso!</string>
+    <string name="preencha_todos_os_campos">Por favor, preencha todos os campos</string>
+    <string name="critica_nome">Por favor, preencha o nome completo para cadastrar-se</string>
+    <string name="critica_email">Por favor, insira um e-mail válido</string>
+    <string name="critica_conf_senha">Os dados inseridos nos campos Senha e Confirme sua senha, devem ser iguais. Tente novamente.</string>
+    <string name="valida_senha">A senha deve conter pelo menos 6 caracteres, uma letra maiuscula e minuscula, um número e um caracter especial.</string>
 </resources>

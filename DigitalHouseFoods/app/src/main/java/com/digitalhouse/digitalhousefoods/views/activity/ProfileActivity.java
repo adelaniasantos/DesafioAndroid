@@ -23,7 +23,7 @@ public class ProfileActivity extends AppCompatActivity {
         botaoSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Dados Salvos com sucesso!", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.dados_sucesso, Toast.LENGTH_LONG);
                 toast.show();
             }
         });
