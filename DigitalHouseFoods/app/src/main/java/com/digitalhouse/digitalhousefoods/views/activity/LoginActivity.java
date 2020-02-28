@@ -43,9 +43,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        loginUsuario = findViewById(R.id.textEmail);
-        loginSenha = findViewById(R.id.textPassword);
-        botaoRegister = findViewById(R.id.buttonRegister);
+        loginUsuario = findViewById(R.id.textEmailLogin);
+        loginSenha = findViewById(R.id.textPasswordLogin);
+        botaoRegister = findViewById(R.id.buttonRegisterLogin);
         botaoLogin = findViewById(R.id.buttonLogIn);
     }
 

@@ -7,7 +7,7 @@
     tools:context=".views.activity.LoginActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textEmail"
+        android:id="@+id/textEmailLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,7 +27,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textPassword"
+        android:id="@+id/textPasswordLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -37,7 +37,7 @@
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail">
+        app:layout_constraintTop_toBottomOf="@+id/textEmailLogin">
 
         <com.google.android.material.textfield.TextInputEditText
             android:textColor="@color/azul"
@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/textPasswordLogin" />
 
     <View
         android:id="@+id/divisor1"
@@ -72,7 +72,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
-        android:background="#C0CCDA"
+        android:background="@color/divisor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogIn" />
@@ -84,7 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:background="#C0CCDA"
+        android:background="@color/divisor"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogIn" />
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonLogIn" />
 
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/buttonRegisterLogin"
         style="@style/Botao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -118,5 +118,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

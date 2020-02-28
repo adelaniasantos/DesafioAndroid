@@ -17,7 +17,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setTitle("Register");
+        getSupportActionBar().setTitle("Profile");
 
         botaoSave = findViewById(R.id.buttonSaveProfile);
         botaoSave.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        startActivity(new Intent(this, MainActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        startActivity(new Intent(this, MainActivity.class));
         finishAffinity();
         return;
     }
