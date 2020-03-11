@@ -1,11 +1,33 @@
 <resources>
-
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/azul</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="texto" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textSize">14sp</item>
+     </style>
+
+    <style name="Botao" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TituloRestaurante" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textColor">@color/azul_escuro</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.29</item>
+    </style>
 </resources>
